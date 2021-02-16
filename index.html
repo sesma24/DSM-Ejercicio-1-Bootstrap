@@ -21,31 +21,31 @@
           <h1 class="display-3 ">Mi página</h1>
         </div>
         <div class="col-sm">
-          <li class="dropdown language-selector float-right">
-            Idioma:  
+          <li class="dropdown language-selector float-right p-3">
+            Idioma:     
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-close-others="true">
-              <img src="images/flag-uk.png" />
+              <img src="images/flag-es.png" />
             </a>
-            <ul class="dropdown-menu pull-right bg-light margin">
-              <li>
+            <ul class="dropdown-menu pull-right bg-light margin ml-1">
+              <li class="px-2">
                 <a href="#">
                   <img src="images/flag-de.png" />
                   <span>Aleman</span>
                 </a>
               </li>
-              <li class="active">
+              <li class="active px-2">
                 <a href="#">
                   <img src="images/flag-uk.png" />
-                  <span>Ingles</span>
+                  <span>Inglés</span>
                 </a>
               </li>
-              <li>
+              <li class="px-2">
                 <a href="#">
                   <img src="images/flag-fr.png" />
                   <span>Frances</span>
                 </a>
               </li>
-              <li>
+              <li class="px-2">
                 <a href="#">
                   <img src="images/flag-es.png" />
                   <span>Español</span>
@@ -96,21 +96,25 @@
       <div id="carouselExample" class="carousel slide row border border-info rounded text-dark bg-light" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="images/image1.jpg" alt="Primera diapositiva">
+            <img class="d-block w-100" src="images/image1.jpg" alt="Primera diapositiva" >
             <div class="carousel-caption">
-              <h3>Campo de fútbol</h3>
+              <h3>El Pinar</h3>
               <p>Club Deportivo Sesma</p>
-          </div>
+            </div>
           </div>
           <div class="carousel-item">
             <img class="d-block w-100" src="images/image2.jpeg" alt="Segunda diapositiva">
-            <h3>Campo de fútbol 2</h3>
-            <p>Club Deportivo Sesma</p>
+            <div class="carousel-caption">
+              <h3>Desde arriba</h3>
+              <p>Club Deportivo Sesma</p>
+            </div>
           </div>
           <div class="carousel-item">
             <img class="d-block w-100" src="images/image3.jpeg" alt="Tercera diapositiva">
-            <h3>Campo de fútbol 3</h3>
-            <p>Club Deportivo Sesma</p>
+            <div class="carousel-caption">
+              <h3>Campo de fútbol de noche</h3>
+              <p>Club Deportivo Sesma</p>
+            </div>
           </div>
         </div>
       </div>
@@ -120,7 +124,7 @@
           El CDS es el equipo de futbol que representa al municipio de Sesma
         </div>
         <div class="col-12 col-md-6">
-          <img class="rounded" src="images/a.jpg" alt="Foto escudo">
+          <img class="rounded p-3" src="images/a.jpg" alt="Foto escudo">
         </div>
       </div>
 
@@ -145,7 +149,7 @@
           <div class="card">
             <div class="card-header" id="headingOne">
               <h5 class="mb-0">
-                <button class="btn btn-dark" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <button class="btn btn-light" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                   El Club Deportivo Sesma llega a su séptimo partido invicto: Sesma 2 - San Adrián 0
                 </button>
               </h5>
@@ -168,7 +172,7 @@
           <div class="card">
             <div class="card-header" id="headingTwo">
               <h5 class="mb-0">
-                <button class="btn btn-dark collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <button class="btn btn-light collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                   Partido homenaje
                 </button>
               </h5>
@@ -182,7 +186,7 @@
           <div class="card">
             <div class="card-header" id="headingThree">
               <h5 class="mb-0">
-                <button class="btn btn-dark collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <button class="btn btn-light collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                   El CD Sesma dice adiós a una etapa
                 </button>
               </h5>
@@ -202,22 +206,26 @@
 
 
       <div class="row border border-info rounded text-dark bg-light">
-        <div class="col-12 col-md-6">
-          <form class="form-inline" action="/action_page.php">
-            <label for="email" class="mr-sm-2">Introducir usuario:</label>
-            <input type="email" class="form-control mb-2 mr-sm-2" placeholder="Usuario" id="user">
-            <label for="pwd" class="mr-sm-2">Introducir contraseña:</label>
-            <input type="password" class="form-control mb-2 mr-sm-2" placeholder="Contraseña" id="pwd">
-            <div class="form-check mb-2 mr-sm-2">
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox"> Recordar
-              </label>
+        <div class="col-12 col-md-6 p-3">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Introduce email">
+              <small id="emailHelp" class="form-text text-muted">Nunca vamos a compartir tu dirección de correo con nadie.</small>
             </div>
-            <button type="submit" class="btn btn-outline-success mb-2">Entrar</button>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Contraseña</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Recordar cuenta</label>
+            </div>
+            <button type="submit" class="btn btn-dark float-right">Entrar</button>
           </form>
         </div>
-        <div class="col-12 col-md-6">
-          <img class="d-block w-100" src="images/mapa.png" alt="Mapa campo de fútbol">
+        <div class="col-12 col-md-6 p-3">
+          <img class="d-block w-100 mx-auto" src="images/mapa.png" alt="Mapa campo de fútbol" style="max-height:400px; max-width:400px;">
         </div>
 
       </div>
