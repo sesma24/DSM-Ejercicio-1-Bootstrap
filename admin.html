@@ -8,17 +8,169 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Administración</title>
+
+    <style>
+      .bs-example{
+          margin: 20px;        
+      }
+      /* Adding space at the bottom of progress bar */
+      .progress{
+          margin-bottom: 1rem;
+      }
+    </style>
   </head>
+  
   <body>
+    <div class="container-fluid">
 
-    <div class="container">
-      <div class="row">
-
+      <div class="jumbotron text-center" style="margin-bottom:0">
+        <h1>Controladores de los indicadores</h1>
+        <p>Esta es la página para el control de todo</p> 
       </div>
-    </div>
 
-    <h1>Hello, world!</h1>
+      <div class="row">
+        <div class="col-12 col-md-2 bg-info text-white">
+            <img src="images/cds.png" class="roubded mx-auto" alt="Logo not found" style="max-height:120px; max-width:120px;">
+            <h2 class="mx-auto">Administración</h2>
+            <h5 class="text-dark mx-auto">Club Deportivo Sesma</h5>
+            <p>
+              El Club Deportivo Sesma es un club de fútbol de Sesma, Navarra, España, que compite actualmente en La Liga Santander. Fue fundado el 24 de octubre de 1920, fruto de la fusión de dos clubes de Pamplona: la Sportiva Foot-ball Club y el New Club, lo que le convierte en el club decano de Navarra. Investigaciones del Archivo Real y General de Navarra indican que el club Sportiva Foot-Ball Club, fundado el 31 de mayo de 1919, cambió de nombre a Club Osasuna en 1920, siendo esta última fecha la que ha sido tomada como referencia del nacimiento del club.4​ En 1926 el nombre de la entidad sufrió una última modificación por la de Club Deportivo Sesma, vigente desde entonces.
+            </p>
+        </div>
+
+        <div class="col-12 col-md-10 ">
+            <nav>
+              <ol class="breadcrumb bg-dark">
+                  <li class="breadcrumb-item"><a href="#">Equipo</a></li>
+                  <li class="breadcrumb-item"><a href="#">Jugadores</a></li>
+                  <li class="breadcrumb-item active">Horarios</li>
+              </ol>
+            </nav>
+
+            <a href="#" data-toggle="popover" title="Información" data-content="En esta tabla se recoge la información sobre todos los jugadores de la primera plantilla del club"> <h2>Tabla de jugadores</h2></a>
+            
+            <p>Colocate sobre las palabras clave para obtener más información sobre la plantilla: <a href="#" class="tooltip-test" title="La plantilla cuenta con un total de 22 jugadores">número de jugadores</a> y  <a href="#" class="tooltip-test" title="El entrenador es Juan Pérez y el preparador físico Miguel Lumbreras">cuerpo técnico</a>.</p>
+           
+            <div class="bs-example">
+              <div class="table-responsive"> 
+                  <table class="table">
+                      <thead>
+                          <tr>
+                              <th>Número</th>
+                              <th>Nombre</th>
+                              <th>Apellido</th>
+                              <th>Email</th>
+                              <th>Posición</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td>1</td>
+                              <td>Clark</td>
+                              <td>Kent</td>
+                              <td>clarkkent@mail.com</td>
+                              <td>Portero</td>
+                          </tr>
+                          <tr>
+                              <td>2</td>
+                              <td>John</td>
+                              <td>Carter</td>
+                              <td>johncarter2@mail.com</td>
+                              <td>
+                                <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target=".bd-example-modal-lg">Extremo derecho (información extra)</button>
+                    
+                                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                  <div class="modal-dialog modal-lg modal-dialog-centered">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Información extra del jugador</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                                      <div class="modal-body">
+                                        Empezó en el fútbol a los diez años. Lo hizo en el equipo infantil de la Ikastola Lizarra en la que estudiaba en su Estella natal. Allí pasó los dos primeros años, para luego ingresar en el CD Estella otros dos. Fue en su primer año como juvenil después de completar una temporada memorable con el CD Izarra, consiguió el ascenso a la División de Honor. Entonces Jesús Corera, director del fútbol base de Osasuna, movió los hilos para llevárselo a Tajonar.1​
+                                        Fue cedido al Burladés para jugar una temporada en Tercera División antes de debutar en Segunda División B con Osasuna Promesas en 2005/06.
+                                        Debutó en el primer equipo en Primera División en el año 2008, en el entonces Estadio Reyno de Navarra.
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                      </div>
+                                  </div>
+                                </div></td>
+                          </tr>
+                          <tr>
+                              <td>3</td>
+                              <td>Peter</td>
+                              <td>Parker</td>
+                              <td>peterparker@mail.com</td>
+                              <td>Defensa central</td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td>Pedro</td>
+                            <td>Marko</td>
+                            <td>pedromarko@mail.com</td>
+                            <td>Extremo izquierdo</td>
+                        </tr>
+                        <tr>
+                          <td>7</td>
+                          <td>John</td>
+                          <td>Ososrio</td>
+                          <td>johncarter2@mail.com</td>
+                          <td>Interior</td>
+                      </tr>
+                      </tbody>
+                  </table>
+              </div>    
+          </div>
+
+            <h2>Progreso de las tareas</h2>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-info" style="width: 20%">
+                    Riego del campo: 20%
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-success" style="width: 90%">
+                    Fichas jugadores: 40% 
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-warning" style="width: 80%">
+                    Reconocimientos médicos: 80% 
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-danger" style="width: 40%">
+                    Protocolo anti-COVID : 40% 
+                </div>
+            </div>
+
+          <button type="button" class="btn btn-light" disabled>
+              <span class="spinner-border spinner-border-sm"></span> Comienzo de temporada...
+          </button>
+         
+        </div>  
+      </div>
+
+      
+          
+      <div class="jumbotron text-center row border border-info rounded text-dark bg-light" style="margin-bottom:0">
+        <div class="col-6">
+          <p>Footer 1</p>
+        </div>
+        <div class="col-6">
+          <p>Footer 2</p>
+        </div>
+      </div>
+      
+
+    </div>
+ 
+   
+      
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -26,6 +178,11 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
+    <script>
+      $(document).ready(function(){
+        $('[data-toggle="popover"]').popover();   
+      });
+    </script>
 
   </body>
 </html>
