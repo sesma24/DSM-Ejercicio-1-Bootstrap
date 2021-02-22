@@ -50,8 +50,10 @@
 
             <a href="#" data-toggle="popover" title="Información" data-content="En esta tabla se recoge la información sobre todos los jugadores de la primera plantilla del club"> <h2>Tabla de jugadores</h2></a>
             
-            <p>Colocate sobre las palabras clave para obtener más información sobre la plantilla: <a href="#" class="tooltip-test" title="La plantilla cuenta con un total de 22 jugadores">número de jugadores</a> y  <a href="#" class="tooltip-test" title="El entrenador es Juan Pérez y el preparador físico Miguel Lumbreras">cuerpo técnico</a>.</p>
-           
+            <p>Colocate sobre las palabras clave para obtener más información sobre la plantilla: 
+              <button type="button" class="btn btn-light" data-toggle="tooltip" data-placement="top" title="La plantilla cuenta con un total de 22 jugadores">Número de jugadores</button>
+              <button type="button" class="btn btn-light" data-toggle="tooltip" data-placement="bottom" title="El entrenador es Juan Pérez y el preparador físico Miguel Lumbreras">Cuerpo técnico</button>
+              
             <div class="bs-example">
               <div class="table-responsive"> 
                   <table class="table">
@@ -128,13 +130,13 @@
 
             <h2>Progreso de las tareas</h2>
             <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-info" style="width: 20%">
-                    Riego del campo: 20%
+                <div class="progress-bar progress-bar-striped bg-info" style="width: 100%">
+                    Riego del campo: 100%
                 </div>
             </div>
             <div class="progress">
                 <div class="progress-bar progress-bar-striped bg-success" style="width: 90%">
-                    Fichas jugadores: 40% 
+                    Fichas jugadores: 90% 
                 </div>
             </div>
             <div class="progress">
@@ -182,6 +184,11 @@
       $(document).ready(function(){
         $('[data-toggle="popover"]').popover();   
       });
+      
+      $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    
     </script>
 
   </body>
